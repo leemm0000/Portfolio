@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> </title>
+
+  <!-- Swiper CSS (CDN) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!-- CSS 파일 -->
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="modal.css">
+  <link rel="stylesheet" href="swiper.css">
+  <link rel="stylesheet" href="featherlight.css">
+  <link rel="stylesheet" href="featherlight.gallery.css">
+</head>
+<body>
+
+<div class="inner">
+  <h2>[카드뉴스] 장마철 침수 사고 예방 안내 카드뉴스 </h2>
+
+  <h3>기여도</h3>
+  <p>100%</p>
+
+  <h3>사용 프로그램</h3>
+  <p>Figma, Photoshop</p>
+
+  <h3>기획의도</h3>
+  <p>
+    장마철 침수사고 예방을 위한 카드뉴스 콘텐츠입니다.귀엽고 간결한 일러스트와 노란색·파란색의 대비 컬러를 활용해, 
+    정보 전달력과 시각적 집중도를 높였습니다.
+
+    <br><br>
+    *본 작업은 포트폴리오용으로 제작되었습니다.
+  </p>
+  <div class="inner-img">
+    <img src="images/카드뉴스 목업 (2).png" alt="">
+
+  </div>
+  <div class="inner-swiper">
+    <!-- Swiper 시작 -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="images/카드뉴스 -01.png" alt=""></div>
+        <div class="swiper-slide"><img src="images/카드뉴스 -02.png" alt=""></div>
+        <div class="swiper-slide"><img src="images/카드뉴스 -03.png" alt=""></div>
+        <div class="swiper-slide"><img src="images/카드뉴스 -04.png" alt=""></div>
+        <div class="swiper-slide"><img src="images/카드뉴스 -05.png" alt=""></div>
+        <div class="swiper-slide"><img src="images/카드뉴스 -06.png" alt=""></div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+    <!-- Swiper 끝 -->
+  </div>
+</div>
+
+ 
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- Swiper 초기화 -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  });
+</script>
+
+</body>
+</html>

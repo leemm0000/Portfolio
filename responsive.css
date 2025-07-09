@@ -1,0 +1,138 @@
+@media screen and (max-width: 768px) { 
+
+  
+section{
+  height: 100vh;
+}
+
+  .title{
+ 
+    text-align: center;
+    font-size: 80px;
+    padding-bottom: 0;
+    padding-left: 0;
+  }
+
+  nav>ul{display: none;}
+
+/* intro */
+.intro{width: 100%; height: 100vh; align-content: center;
+background:#0351F9 ;}
+.video_wrap>video{width: 100%;}
+
+/* about me */
+  .aboutme-face{display: none;}
+  .aboutme-wrap {
+    width: 100%;
+    padding: 10px;
+    margin-top: 50px;
+ 
+  }
+  .aboutme-name  { padding-right: 0; padding-bottom: 50px;}
+  .aboutme-text {
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    align-items: center;
+    padding: 0;
+  }
+  .pf-warp {
+    width: 100%;
+    gap: 10px;
+  }
+  /* skill */
+  .skills{
+    height: 100%;;
+  }
+  .card-wrap{
+    flex-direction: column;
+    padding: 30px;
+    justify-content: center;
+  }
+  .card{ 
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    align-items: center;
+  }
+  .card-top{}
+  .card-icon{scale: .7; }
+  .card-title{ margin-top:0; font-size: 15px;}
+  .card-desc{width: 80%;}
+  .card-hover { 
+    width: 10%;
+    height: 100%;
+    scale: 0.6;
+    transform: rotate(90deg);
+    transform-origin: center center;
+    padding: 0;
+    margin-left: 8px;
+    /* 💡 추가! */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+    .card:hover .card-hover {padding-bottom:0;}
+
+/* Portfolio */
+.portfolio{
+  height: 100%;
+}
+.con_wrap{  
+  width: 100%;
+  padding: 50px;
+  gap: 20px;
+}
+.ptf-card-wrap{
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+/* thankyou */
+.thankyou>.title{font-size:70px ;}
+.tky-inner{
+  width: 100%;
+  padding-top: 50px;
+}
+.tky-text{
+  margin: 80px;
+  padding-left: 0;
+  
+text-align: center;}
+  .tky-title{
+    font-size: 25px;
+  }
+  .tky-desc{
+    font-size: 15px;
+    width: 100%;
+  }
+  .tky-img{
+    display: none;
+  }
+  /* contact */
+  .contact-inner{padding: 10px;   gap: 00;}
+  .ct-card{
+    width: 170px;
+    height: 170px;
+    text-align: center;
+    color: var(--main-color);
+    padding: 10px;
+    border-right: 1px solid var(--main-color) ;
+  }
+  .ct-icon{
+    font-size: 35px;
+  }
+  .ct-title{
+    font-size: 15px;
+    font-weight: 700;
+    padding-top: 10px;
+  }
+  .ct-desc{
+    font-size: 12px;
+    font-weight:500;
+    padding-top: 10px;
+    text-align: center;}
+
+} 

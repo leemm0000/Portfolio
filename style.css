@@ -1,0 +1,367 @@
+/* root */
+:root{
+  --main-color:#0351F9;
+  --sub-color:#FEC504;
+  --point:#FC70A4;
+  --bg:#FEECDE;    
+}
+
+/* common */
+html {
+  scroll-behavior: smooth;
+}
+.title{
+  font-family: 'Bowlby One SC' ;
+  font-size: 120px;
+  font-weight: bold;
+  color: var(--main-color);
+  padding-bottom: 50px;
+  padding-left: 50px;
+}
+
+section{
+  width: 100%;
+  height: 1080px;
+  overflow: hidden;
+}
+
+/* header */
+header{
+  width: 100%; 
+  background-color: var(--main-color);
+  height: 80px;
+  line-height: 80px;
+}
+nav{ 
+  display: flex; 
+  justify-content: space-between;
+  height: 100%;
+
+
+}
+
+
+
+.logo{ }
+.logo > a {
+  width: 200px;
+  height: 100%;
+  display: block;
+  background-image: url(images/logo.png); 
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.logo > a:hover {
+  background-image: url(images/logo02.png);
+}
+nav>a{ padding: 0 20px ; 
+  color: #FEECDE;
+  width: 100%;
+}
+nav>ul{
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+nav>ul li{
+  padding: 0 20px ;
+
+}
+nav>ul li a{
+  color: #FEECDE;
+  transition: .3s;
+}
+nav>ul li a:hover{
+  color: var(--sub-color);
+}
+/* intro */
+/* aboutme */
+.aboutme{background-color: var(--bg);}
+.aboutme-wrap{
+  display: flex; justify-content: center;
+  padding: 0 320px ;
+}
+.aboutme-face{
+  width: 375px; height: 650px; background-color: var(--sub-color); border-radius:100px 0 100px 0 ;
+}
+.aboutme-text{
+  display: flex; width: 752px; padding-left: 45px;
+  color: var(--main-color);
+}
+.aboutme-name{ padding-right: 145px; }
+.aboutme-name h2{
+  font-size: 30px;
+  width: 240px;
+}
+.aboutme-name p{
+  padding-top:18px ;
+  font-size: 20px;
+}
+.aboutme-profile{}
+.pf-title{ font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 600;
+
+
+}
+.pf-warp{
+  padding-top:18px ;
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+  
+}
+.pf-bottom{
+  padding-top: 70px;
+}
+.pf-desc{}
+.pf-date{}
+
+
+/* skills */
+.skills{
+  background-color: var(--main-color);
+}
+.skills>.title{color: var(--bg);}
+.card-wrap{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+
+}
+.card{ 
+  background-color: var(--bg);
+  width: 390px;
+  height: 545px; 
+  padding: 70px;
+  border-radius: 25px 0 25px;
+  text-align: center;
+}
+.card-top{}
+.card-icon{
+width: 156px;
+height: 156px;
+border-radius: 100%;
+background-color: var(--point);
+color: var(--bg);
+text-align: center;
+align-content: center;
+margin: auto;
+}
+.card-icon > img{scale: .8; }
+.card-title{
+  color: var(--main-color);
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 35px;
+  padding-bottom:15px ;
+}
+.card-desc{
+  color: var(--main-color);
+  font-size: 15px;
+}
+.card-hover{
+ 
+  padding-top: 35px;
+  opacity: 0;
+  transition: .3s;
+}
+.card:hover .card-hover{
+  opacity: 1;
+  padding-top: 25px;
+}
+/* Portfolio */
+.portfolio{
+  background: var(--bg);
+  position: relative;
+}
+.tab_wrap{}
+.tab_menu{
+  display: flex; 
+  justify-content: center;
+  gap: 45px;
+}
+.tab_menu> ul{
+
+
+}
+.tab_menu > li{
+  list-style: none;
+  border-radius: 10px;
+  transition: .3s;
+}
+.tab_menu > li a:hover,
+.tab_menu a.active{  background-color: var(--sub-color); color: var(--bg);}
+.tab_menu >li a {text-decoration: none;
+  color: var(--main-color);
+  padding: 10px;
+  border-radius: 15px;
+  transition: .3s;
+}
+/* 포트폴리오 카드 */
+.con_wrap{  
+width: 1280px;
+margin: auto;
+text-align: center;
+gap: 50px;
+}
+#tab4{
+  margin-top: 80px;
+  color: var(--main-color);
+}
+.ptf-card-wrap{
+  width: 100%;
+  display: flex;
+  gap: 50px;
+  margin-top: 50px;
+  justify-content: space-around;
+}
+.ptf-card {
+  width: 350px;
+  height: 330px;
+  background: var(--bg);
+  border: 4px solid var(--main-color);
+  border-radius: 25px 0 25px 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* 이미지 영역 */
+.ptf-card-img {
+  position: relative;
+  flex: 1;
+  background: #eee; /* 이미지 넣기 전 임시 배경 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  color: var(--main-color);
+  
+}
+
+.ptf-card-img>img{width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.ptf-card-figure {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(3, 81, 249, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.ptf-card-figure i {
+  background-color: var(--bg);  
+  color: var(--point);           
+  font-size: 24px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ptf-card-img:hover .ptf-card-figure {
+  opacity: 1;
+}
+
+/* 텍스트 영역 */
+.ptf-card-text {
+  background: var(--main-color);
+  padding: 12px 20px;
+  color: #fff;
+  text-align: center;
+}
+
+.ptf-card-title {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.ptf-card-desc {
+  font-size: 14px;
+  opacity: 0.9;
+}
+/* thankyou */
+.thankyou{
+  background: var(--main-color);
+}
+.thankyou>.title{color: var(--bg);}
+.tky-inner{
+  width: 1280px;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+.tky-text{
+  color: var(--bg);
+  font-weight: 500;
+  padding-left: 45px;
+}
+.tky-title{
+  font-size: 30px;
+  font-weight: 600;
+  padding-bottom: 38px;
+}
+.tky-desc{
+  font-size: 20px;
+  width: 700px;
+}
+.tky-img{
+  width: 375px;
+  height: 650px;
+  background: var(--point);
+  border-radius: 100px 0 100px 0;
+}
+/* contact */
+.contact{
+  background: var(--bg);
+  height: 450px;
+}
+.contact>.title{
+  padding-bottom: 30px;
+}
+.contact-inner{
+  width: 100%;
+  justify-content: center;
+  gap: 20px;
+  display: flex;
+
+}
+.ct-card{
+  width: 240px;
+  height: 170px;
+  text-align: center;
+  color: var(--main-color);
+  padding: 20px;
+  border-right: 1px solid var(--main-color) ;
+
+}
+.ct-card:nth-child(3){
+  border: none;
+}
+.ct-icon{
+  font-size: 35px ;
+}
+.ct-title{
+  font-size: 20px;
+  font-weight: 700;
+  padding-top: 30px;
+}
+.ct-desc{
+  font-size: 18px;
+  font-weight:500;
+  padding-top: 15px;
+}
