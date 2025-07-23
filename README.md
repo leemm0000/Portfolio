@@ -8,7 +8,7 @@
 - **Featherlight.js**를 활용한 갤러리 모달 구현
 - **Swiper.js**를 이용한 콘텐츠 슬라이드
 - **반응형 웹 디자인** 적용
-- 콘텐츠별 모달 페이지 구성 (`modal-작품명.html`)
+- 콘텐츠별 모달 페이지 구성 
 - 직관적인 섹션 구성: Intro / About Me / Skills / Portfolio / Contact
 
 ## 📁 폴더 구조
